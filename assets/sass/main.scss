@@ -1,0 +1,104 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+
+$black: #0e0a19;
+$fuschia: #a33acb;
+$jewel: #4717f6;
+$grey: #e8dfe0;
+
+
+html, body {
+  background: $black;
+  height: 100%;
+}
+
+*,h1,h2,span,div,p, {
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 25px;
+
+}
+
+
+#home {
+  background: url("http://photo.accuweather.com/photogallery/2012/9/500/e8e68b50f.jpg") center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .welcome-box {
+    background: $black;
+    padding: 20px 10px;
+    opacity: .6;
+    text-align: center;
+  
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 27px;
+      font-weight: 200;
+      text-transform: uppercase;
+    }
+  }  
+}
+
+
+
+// ALL TASKS PAGE BEGINS HERE 
+
+
+#all-tasks {
+  background: url("http://photo.accuweather.com/photogallery/2012/9/500/e8e68b50f.jpg") center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  // height: 300px;
+  background-size: cover;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  .header {
+    background: $jewel;
+    opacity: .6;
+    padding: 50px 15px;
+    text-align: right;
+
+    .logo{
+      font-family: 'Sirin Stencil', cursive;
+      font-size: 40px;
+      font-weight: 500;
+      float: left;
+    }
+    .task-total {
+      .tasks {
+        .number {
+          font-size: 45px;
+          margin: 0 20px 0 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  &.jewel {
+    background: $jewel;
+    margin: 15px 0;
+    font-size: 25px;
+  }
+}
+
+
+
+
+
+
+
