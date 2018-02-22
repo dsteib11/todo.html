@@ -1,0 +1,35 @@
+#home {
+  background: url("http://photo.accuweather.com/photogallery/2012/9/500/e8e68b50f.jpg") center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .welcome-box {
+    background: $black;
+    padding: 20px 10px;
+    opacity: .6;
+    text-align: center;
+  
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 27px;
+      font-weight: 200;
+      text-transform: uppercase;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px 20px;
+      text-align: center;
+      &.jewel {
+        background: $jewel;
+        margin: 15px 0;
+        font-size: 25px;
+      }
+    }    
+  }  
+}

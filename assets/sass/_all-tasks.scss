@@ -1,0 +1,82 @@
+#all-tasks {
+  
+  .header {
+    background: url("http://photo.accuweather.com/photogallery/2012/9/500/e8e68b50f.jpg") center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    color: #fff;
+    font-weight: 500;
+    // height: 300px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    
+    .top {
+      background: $jewel;
+      opacity: .6;
+      padding: 50px 15px;
+      text-align: right;
+  
+      .logo{
+        font-family: 'Sirin Stencil', cursive;
+        font-size: 40px;
+        font-weight: 500;
+        float: left;
+      }
+      .task-total {
+        position: relative;
+        top: -15px;
+        .tasks {
+          display: inline-block;
+          .number {
+            color: $black;
+            font-weight: 500;
+            font-size: 60px;
+            margin: 0 10px 0 0;
+            position: relative;
+            top: 10px;
+          }
+        }
+      } 
+    }
+    
+    .add-circle {
+      background: $fuschia;
+      border-radius: 50%;
+      top: 126px;
+      padding: 10px 12px;
+      position: absolute;
+      right: 25px;
+    }
+  }
+
+  // FIX CONTENT AREA....CANT GET MARGIN RIGHT
+  .content-area {
+    color: $black;
+    width: 100%;
+    .container {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1100px;
+      background: rgb(194, 190, 190);
+      .task-container {
+        margin: 40px 0;
+        .task-box {
+          padding: 20px;
+          border-bottom: 4px solid $fuschia;
+          margin: 0 0 20px 0;
+          
+          .task-title {
+            font-size: 30px;
+            font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+          }
+        }
+      } 
+    }       
+  }
+}
+
+
+
