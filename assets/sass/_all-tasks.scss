@@ -52,31 +52,61 @@
   }
 
   // FIX CONTENT AREA....CANT GET MARGIN RIGHT
+
   .content-area {
     color: $black;
     width: 100%;
-    .container {
-      display: block;
-      width: 100%;
-      margin: 0 auto;
-      max-width: 1100px;
-      background: rgb(194, 190, 190);
-      .task-container {
-        margin: 40px 0;
-        .task-box {
-          padding: 20px;
-          border-bottom: 4px solid $fuschia;
-          margin: 0 0 20px 0;
-          
-          .task-title {
-            font-size: 30px;
-            font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-          }
+    .tasks-container {
+      margin: 20px 0;
+      .task-box {
+        padding: 20px;
+        border-bottom: 2px solid $fuschia;
+        margin: 0 0 20px 0;
+        background: #fff;
+        position: relative;
+        .title{
+          color: black;
+          font-size: 24px;
+          font-family: 'Patua One';
         }
-      } 
-    }       
+        .date {
+          font-size: 18px;
+          color: $jewel;
+          font-family: 'Patua One';
+          margin: 15px 0 0 0;
+        }
+        .check-box {
+          padding: 10px;
+          border-radius: 10px;
+          border: 3px solid $jewel;
+          display: inline-block;
+          position: absolute;
+          top: 25px;
+          right: 25px;
+          font-size: 20px;
+        }
+      }
+    }
   }
 }
+
+
+
+
+
+
+.container {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1100px;
+  background: rgb(194, 190, 190);
+}
+
+// .task-title {
+//   font-size: 25px;
+//   font-family: 'Open Sans', 'Helvetica Neue', sans-serif}
+
 
 
 

@@ -2,6 +2,7 @@
 @import "reset";
 
 
+
 $black: #0e0a19;
 $fuschia: #a33acb;
 $jewel: #4717f6;
@@ -16,14 +17,14 @@ html, body {
 *,h1,h2,h3,h4,h5,h6,span,div,p {
   box-sizing: border-box;
   font-size: 25px;
-
 }
 
 
 // ALL TASKS PAGE BEGINS HERE 
 
-@import "all-tasks";
 @import "home";
+@import "all-tasks";
+
 
 
 

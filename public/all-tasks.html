@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sirin+Stencil" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Patua+One|Sirin+Stencil" rel="stylesheet">    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
     <div id="all-tasks">
@@ -33,22 +32,51 @@
       </section>
 
       <section class="content-area">
-        <div class="container">
-          <div class="tasks-container">
-            <div class="task-box">
-              <div class="task-title">
-                Clean my room..
-              </div>
-            </div>
+          <div class="container">
+            <div class="tasks-container">
+                <div class="task-box">
+                    <div class="title">
+                      Clean my room..
+                    </div>
+                    <div class="date">
+                        Feb 24, 2018
+                    </div>
+                    <div class="check-box">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
 
-            <div class="task-box">
-                <div class="task-title">
-                  Clean my room..
+                <div class="task-box">
+                    <div class="title">
+                      Clean my room..
+                    </div>
+                    <div class="date">
+                        Feb 24, 2018
+                    </div>
+                    <div class="check-box">
+                        <i class="fas fa-check"></i>
+                    </div>
                 </div>
             </div>
           </div>
-        </div>
-      </section>
+      </section>  
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous">
+    </script>
+
+    <script>
+      $(document).ready (function() {
+        $('.add-circle').on('click', function(){
+          console.log('show popup')
+        })
+      })
+    </script>
+
+
+
   </body>
 </html>
