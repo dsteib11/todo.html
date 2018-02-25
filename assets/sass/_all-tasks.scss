@@ -48,6 +48,7 @@
       padding: 10px 12px;
       position: absolute;
       right: 25px;
+      cursor: pointer;
     }
   }
 
@@ -68,6 +69,7 @@
           color: black;
           font-size: 24px;
           font-family: 'Patua One';
+
         }
         .date {
           font-size: 18px;
@@ -88,7 +90,84 @@
       }
     }
   }
-}
+  
+  .task-form {
+    background: $fuschia;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 25px 0;
+    transform: translate(0,100%);
+    transition: all .6s ease-in-out;
+    &:active {
+      transform: translate(0,0);
+    }
+    }
+
+    h3 {
+      margin: 25px 0;
+      text-align: center;
+      font-size: 35px;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+    form {
+      display: block;
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    label {
+      display: block;
+      text-transform: capitalize;
+      font-family: 'Patua One';
+      font-size: 25px;
+      text-align: left;
+      margin: 0 0 10px 0;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      text-transform: uppercase;
+      font-family: 'Patua One';
+      font-size: 25px;
+      background: rgba(255, 255, 255, .1);
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, .7);
+      color: #fff;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea {
+      height: 250px;
+    }
+
+    button {
+      color: #fff;
+      background: $jewel;
+      padding: 15px 20px;
+      border: none;
+      width: 100%;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .close-btn {
+      font-size: 30px;
+      position: absolute;
+      right: 35px;
+      top: 35px;
+      padding: 15px;
+      cursor: pointer;
+    }
+  }
+
 
 
 
@@ -101,6 +180,7 @@
   margin: 0 auto;
   max-width: 1100px;
   background: rgb(194, 190, 190);
+  padding: 0 15px;
 }
 
 // .task-title {
