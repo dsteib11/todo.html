@@ -1,4 +1,7 @@
 #all-tasks {
+  height: 100%;
+  overflow: auto;
+  background-color: $grey;
   
   .header {
     background: url("http://photo.accuweather.com/photogallery/2012/9/500/e8e68b50f.jpg") center center;
@@ -17,6 +20,7 @@
       opacity: .6;
       padding: 50px 15px;
       text-align: right;
+      position: relative;
   
       .logo{
         font-family: 'Sirin Stencil', cursive;
@@ -93,17 +97,17 @@
   
   .task-form {
     background: $fuschia;
-    z-index: 100;
     position: absolute;
+    z-index: 100;
     top: 0;
     bottom: 0;
     width: 100%;
     color: #fff;
-    padding: 25px 0;
+    padding: 10px 0;
     transform: translate(0,100%);
     transition: all .6s ease-in-out;
-    &:active {
-      transform: translate(0,0);
+    &.active {
+    transform: translate(0,0);
     }
     }
 
@@ -132,7 +136,7 @@
     }
     input[type="text"], textarea {
       width: 100%;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       font-family: 'Patua One';
       font-size: 25px;
       background: rgba(255, 255, 255, .1);
@@ -179,13 +183,14 @@
   width: 100%;
   margin: 0 auto;
   max-width: 1100px;
-  background: rgb(194, 190, 190);
   padding: 0 15px;
 }
 
-// .task-title {
-//   font-size: 25px;
-//   font-family: 'Open Sans', 'Helvetica Neue', sans-serif}
+@media screen and (min-width: 0px) {
+  #all-tasks {
+      background-color: lightgreen;
+  }
+}
 
 
 
