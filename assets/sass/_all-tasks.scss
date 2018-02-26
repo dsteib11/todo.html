@@ -186,12 +186,193 @@
   padding: 0 15px;
 }
 
-@media screen and (min-width: 0px) {
+  // CELL PHONES
+  @media screen and (max-width: 767px) {
+   
+#all-tasks {
+  .header{
+    .add-circle {
+      background: #a33acb;
+      border-radius: 50%;
+      top: 186px;
+      padding: 10px 12px;
+      position: absolute;
+      right: 25px;
+      cursor: pointer;
+      font-size: large;
+  }
+    .top{
+      .task-total {
+          top: -24px;
+        .tasks{
+          display: block;
+          .number{
+            color: #0e0a19;
+            font-weight: 500;
+            font-size: 57px;
+            margin: 0 10px 0 0;
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+    }
+  }
+  .content-area 
+  .tasks-container 
+  .task-box {
+    padding: 20px;
+    border-bottom: 2px solid #a33acb;
+    margin: 35px 0 20px 0;
+    background: #fff;
+    position: relative;
+}
+}
+}
+
+ // SMALLER CELL PHONES
+ @media screen and (max-width: 369px) {
+   
   #all-tasks {
-      background-color: lightgreen;
+    .header{
+      .add-circle {
+        background: #a33acb;
+        border-radius: 50%;
+        top: 206px;
+        padding: 10px 12px;
+        position: absolute;
+        right: 25px;
+        cursor: pointer;
+        font-size: large;
+    }
+      .top{
+        background: #4717f6;
+        opacity: .6;
+        padding: 29px 15px;
+        text-align: right;
+        position: relative;
+        .logo {
+          float: none;
+          text-align: center;
+        }
+        .task-total {
+            top: -24px;
+          .tasks{
+            display: inline-block;    margin: 40px 0;
+            .number{
+              color: #0e0a19;
+              font-weight: 500;
+              font-size: 57px;
+              margin: 0 10px 0 0;
+              position: relative;
+              top: 1px;
+            }
+          }
+        }
+      }
+    }
+    .content-area 
+    .tasks-container 
+    .task-box {
+      padding: 20px;
+      border-bottom: 2px solid #a33acb;
+      margin: 35px 0 20px 0;
+      background: #fff;
+      position: relative;
+  }
+  }
+  }
+
+ // TABLETS
+ @media screen and (min-width: 768px) {
+  
+  #all-tasks {
+    .header{
+      .add-circle {
+        background: #a33acb;
+        border-radius: 50%;
+        top: 186px;
+        padding: 10px 12px;
+        position: absolute;
+        right: 25px;
+        cursor: pointer;
+        font-size: large;
+    }
+      .top{
+        .task-total {
+            top: -24px;
+          .tasks{
+            display: block;
+            .number{
+              color: #0e0a19;
+              font-weight: 500;
+              font-size: 57px;
+              margin: 0 10px 0 0;
+              position: relative;
+              top: 1px;
+            }
+          }
+        }
+      }
+    }
+    .content-area{
+      .tasks-container{
+         margin: 50px 0;
+        .task-box {
+          padding: 20px;
+          border-bottom: 2px solid #a33acb;
+          margin: 35px 0 20px 0;
+          background: #fff;
+          position: relative;
+        }
+      }
+    }
   }
 }
 
-
-
-
+ // LABTOPS
+ @media screen and (min-width: 1200px) {
+ 
+  #all-tasks {
+    .header{
+      .add-circle {
+        background: #a33acb;
+        border-radius: 50%;
+        top: 186px;
+        padding: 10px 12px;
+        position: absolute;
+        right: 25px;
+        cursor: pointer;
+        font-size: large;
+    }
+      .top{
+        .task-total {
+            top: -24px;
+          .tasks{
+            display: block;
+            .number{
+              color: #0e0a19;
+              font-weight: 500;
+              font-size: 57px;
+              margin: 0 10px 0 0;
+              position: relative;
+              top: 1px;
+            }
+          }
+        }
+      }
+    }
+    .content-area{
+      .tasks-container{
+         margin: 50px 0;
+        .task-box {
+          padding: 20px;
+          border-bottom: 2px solid #a33acb;
+          margin: 35px 0 20px 0;
+          background: #fff;
+          position: relative;
+      }
+      }
+    }
+  }
+}
